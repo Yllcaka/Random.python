@@ -9,3 +9,9 @@ for i in mo:
         if j == "43":
             count+=1
 print(count)
+lista = [1,2,3,4,5,6,7,8,9]
+
+for i in lista:
+    if i == 3:
+        i = 10
+print(lista)
