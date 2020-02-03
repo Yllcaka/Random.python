@@ -96,20 +96,24 @@ class hero:
               f'{space("INVENTORY" , 20)}{bold}'
               f'{colored("FLEE" , "cyan")}'
               f'{end}')
-        a = input("What do you wanna do? ").lower()
+        action = input("What do you wanna do? ").lower()
 
-        if a.startswith("a"):
+        if action.startswith("a"):
             self.attack(anti)
 
-        elif a.startswith("i"):
+        elif action.startswith("i"):
             self.inventory(self.inv)
 
-        elif a.startswith("m"):
+        elif action.startswith("m"):
             if self.mana >= 5:
                 self.magic(anti , self.magic_set)
             else:
                 print("MANA is empty")
                 self.hero_stuff(anti)
+        elif action.startswith("f"):
+            print("Unfortunately you are trapped")
+            self.hero_stuff(anti)
+
         else:
             print("Please type a valid answer")
             self.hero_stuff(anti)
