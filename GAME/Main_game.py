@@ -22,7 +22,7 @@ def start():
 
 def The_actual_fighting(hero):
     while hero.health > 0:
-        os.system("clear")
+        os.system("cls" if os.name == 'nt' else "clear")
         hero.leveling_system()
         enemy = monsters(hero)
         if monsters(hero).name == "The Dark King":
