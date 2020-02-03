@@ -15,7 +15,7 @@ of the word.''' , end)
 def start():
     magic_set = [spell("Ember" , 20 , "Fire") , spell("Poison Spit" , 10 , "Poison"), spell("Healing Touch",10,"Healing")]
     stuff = {"Mana potion": 5,"Health potion":5}
-    name = input("What's your name? ").upper()
+    name = input("What's your name? ")
 
     protagonist = choose(name , stuff , magic_set)
     return protagonist
