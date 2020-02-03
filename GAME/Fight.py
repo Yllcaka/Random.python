@@ -1,16 +1,16 @@
 from termcolor import colored
 from Maaaagic import *
 from inventory import *
+# def space(text,cut):
 
-space = (lambda x , y: (y - len(x)) * ' ')
+space = (lambda text , cut: (cut - len(text)) * ' ')
 bold = '\033[1m'
 end = '\033[0m'
-
 
 class hero:
     level = 1
     exp = 0
-    status = "Normal"
+    # status = "Normal"
 
     def __init__(self , name , health , strength , pow , spd , wpn , mana , inv , magic_set):
         self.name = name
