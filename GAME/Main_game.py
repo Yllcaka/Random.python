@@ -29,7 +29,24 @@ def The_actual_fighting(hero):
             KING = monsters(hero)
             fight(hero , KING)
             if KING.health <= 0:
-                print("YOU WON YOU SLAYED THE EVIL LORD")
+                print("YOU SLAYED THE EVIL LORD")
+                print("""
+                 __   __  _______  __   __ 
+                |  | |  ||       ||  | |  |
+                |  |_|  ||   _   ||  | |  |
+                |       ||  | |  ||  |_|  |
+                |_     _||  |_|  ||       |
+                  |   |  |       ||       |
+                  |___|  |_______||_______|
+                 _     _  _______  __    _ 
+                | | _ | ||       ||  |  | |
+                | || || ||   _   ||   |_| |
+                |       ||  | |  ||       |
+                |       ||  |_|  ||  _    |
+                |   _   ||       || | |   |
+                |__| |__||_______||_|  |__|
+                
+                """)
             break
         fight(hero , enemy)
         print("You earned 50XP")
