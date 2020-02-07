@@ -52,12 +52,14 @@ class hero:
         print(colored("\nEXIT","red"))
         select = input("Choose: ").title()
         for i in sets:
-            if (i.spell_name).startswith(select):
+            if select == "Exit":
+                print()
+                break
+            elif (i.spell_name).startswith(select):
                 magic_type(i , self , enemy)
                 self.mana -= 10
                 break
-            elif select.startswith('E'):
-                print()
+
         else:
             print("You don't know that spell")
             self.magic(enemy , sets)
