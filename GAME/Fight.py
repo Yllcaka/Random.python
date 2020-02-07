@@ -154,9 +154,9 @@ def choose(name , stuff , set):
     if hero_class.startswith("W"):
         protagonist = hero(name , 1000 , 150 , 10 , 50 , 'axe' , 50 , stuff , set)
     elif hero_class.startswith("M"):
-        protagonist = hero(name , 500 , 50 , 150 , 300 , 'staff' , 250 , stuff , set)
+        protagonist = hero(name , 500 , 50 , 50 , 300 , 'staff' , 250 , stuff , set)
     elif hero_class.startswith("A"):
-        protagonist = hero(name , 700 , 100 , 75 , 175 , 'knife' , 100 , stuff , set)
+        protagonist = hero(name , 7000 , 1000 , 750 , 1750 , 'knife' , 1000 , stuff , set)
     else:
         print("Please enter a valid answer")
         protagonist = choose(name , stuff , set)
